@@ -41,6 +41,7 @@ text-align: center;
   flex-direction: row;
   text-align: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .header__title {
@@ -65,9 +66,18 @@ align-items: center;
 
 .btn-contact {
   width: 100px;
+  border: 1px solid black;
   height: 30px;
   background-color: white;
   font-weight: 400;
   border-radius: 20px;
   margin-top: 40px;
+  animation: animation-button 6s;
+}
+
+@-webkit-keyframes animation-button {
+  from {background-color:white;
+  color:black;}
+  to {background-color:yellow;
+  }
 }
