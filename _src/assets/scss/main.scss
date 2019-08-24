@@ -1,6 +1,11 @@
 @import 'core/settings';
 @import 'core/links';
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/main';
+@import 'partials/footer';
 
+//general SCSS
 * {
   font-family: 'Montserrat', sans-serif;
   padding: 0;
@@ -9,64 +14,4 @@
 
 body {
   width: 100vw;
-}
-
-.header__container {
-  display: flex;
-  flex-direction: row;
-}
-.logo {
-  width: 130px;
-  height: 60px;
-  margin: 20px;
-}
-
-.header__nav {
-text-align: center;
-}
-
-.header__nav-list {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-list__element {
-  margin:20px;
-}
-
-.page__main {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-}
-
-.header__title {
-  font-size: 30px;
-}
-
-.main__paragraph {
-  width: 350px;
-}
-.main__image {
-  width: 300px;
-  height: 250px;
-}
-
-.main__wrapper {
-background-color: rgb(56, 71, 138);
-color:white;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.btn-contact {
-  width: 100px;
-  height: 30px;
-  background-color: white;
-  font-weight: 400;
-  border-radius: 20px;
-  margin-top: 40px;
 }
