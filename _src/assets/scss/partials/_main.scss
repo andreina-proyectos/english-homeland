@@ -29,13 +29,22 @@
   height: 250px;
   margin: 20px;
   border-radius: 4px;
-  transition: box-shadow 0.3s ease-in-out;
+
+  transition-property: top;
+  transition-duration: .8;
+  transition-timing-function: line;
+
   &:hover {
     transform: scale(1.2, 1.2);
+    box-shadow: 10 10px 10px 0 rgba(0, 0, 0, 0.342);
+    animation-name: up-card;
+    animation-duration: .5s;
   }
-  &:hover::after {
-    opacity: 1;
-  }
+}
+
+@keyframes up-card {
+  from {top: 0px; }
+  to {top: -15px; }
 }
 
 .card1 {
