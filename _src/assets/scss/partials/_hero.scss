@@ -1,12 +1,12 @@
 .hero__container {
   display: flex;
   width:100vw;
-  height: 100vh;
+  height: auto;
   overflow-x:hidden;
 }
 
 .section-hero__information {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left:30px;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@
 }
 
 .hero__description {
-  color:#6793ea;
+  color:#9FBFFF;
   font-size: 12px;
   margin:10px 0;
 }
@@ -31,7 +31,7 @@
 
 .hero__phrase {
   margin: 10px 0;
-  padding-left:20px;
+  margin-left:40px;
   font-size: 12px;
   color:#504648;
 }

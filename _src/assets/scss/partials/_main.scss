@@ -1,0 +1,75 @@
+.page__main {
+  margin:0 30px;
+  color:#5f5658;
+  text-align: center;
+}
+
+.section-prices__title {
+  margin:20px 0;
+  color:#f36b7f;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-prices__pharagraph {
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.main__cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section__card {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.171);
+  border: solid 1px rgba(197, 197, 197, 0.3);
+  width:180px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 4px;
+}
+
+.card1 {
+  border-top:23px solid rgba(255, 176, 58, 0.4);;
+}
+
+.card2 {
+  border-top:23px solid #82b5a5;
+}
+
+.card3 {
+  border-top:23px solid rgba(243, 107, 127, 0.4);
+}
+
+.card4 {
+  border-top:23px solid rgba(159, 191, 255, 0.4);;
+}
+
+.card__content {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card__title {
+  font-size: 15px;
+  font-weight: normal;
+  color:black;
+  display: inline;
+}
+
+.card__description {
+  font-size: 12px;
+  display: inline;
+}
+
+.card__price {
+
+}
+
+.card__ad-info {
+  font-size: 12px;
+  display: inline;
+}
