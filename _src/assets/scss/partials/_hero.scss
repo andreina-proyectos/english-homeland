@@ -1,0 +1,117 @@
+.hero__container {
+  display: flex;
+  width:100vw;
+  height: 100vh;
+  overflow-x:hidden;
+}
+
+.section-hero__information {
+  margin-top: 50px;
+  margin-left:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:60%;
+}
+
+.hero__title {
+  max-width: 300px;
+  font-size: 1.5rem;
+  color:#f36b7f;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.hero__description {
+  color:#6793ea;
+  font-size: 12px;
+  margin:10px 0;
+}
+
+
+.hero__phrase {
+  margin: 10px 0;
+  padding-left:20px;
+  font-size: 12px;
+  color:#504648;
+}
+
+.certificates-list {
+  font-size: 14px;
+  list-style: none;
+  margin-left:20px;
+  line-height: 2;
+  color:#504648;
+
+}
+
+.span-blue {
+  color:#6793ea
+}
+
+.span-yellow {
+  color:#ffb03a
+}
+
+.span-pink {
+  color:#f36b7f;
+}
+
+.btn-reserva {
+  width: 131px;
+  background-color:#9fbfff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  color:#433f3f;
+  margin:20px;
+  text-align: center;
+}
+
+.section-hero__decoration {
+  width:40%;
+}
+
+
+.hero__images-container {
+  position: relative;
+  top: -100px;
+  z-index: -5;
+}
+.hero__blob {
+  transform: scale(1.5);
+}
+
+
+.hero__image {
+  max-width: 70%;
+  height: auto;
+  position: absolute;
+  top:40%;
+  right: 15%;
+}
+
+
+
+
+
+//MEDIA QUERIES HERO
+
+@media screen and (min-width: 320px) and (max-width: 660px) {
+.section-hero__information {
+  margin-top: 30px;
+  margin-left:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:50%;
+}
+
+.hero__image {
+  max-width: 90%;
+  height: auto;
+  position: absolute;
+  top:45%;
+  right: 0%;
+}
+}

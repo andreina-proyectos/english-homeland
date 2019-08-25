@@ -8,6 +8,7 @@
   flex-direction: row;
   align-content: center;
   box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.07);
+  background-color: white;
 }
 
 .logo__container {
@@ -24,7 +25,7 @@
 }
 
 .header__logo-name {
-  width: 100px;
+  width: 125px;
   height: 30px;
 }
 
@@ -86,7 +87,7 @@
 }
 
 //Header Media Queries
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 662px) {
   .header__container {
     flex-direction: column;
     box-shadow: none;
@@ -118,7 +119,6 @@
       padding: 8px 8px;
       &:hover {
         background-color: #799BE0;
-        font-weight: 400px;
       }
     }
   }
@@ -127,8 +127,9 @@
     display: block;
     color:#799BE0;
     position: absolute;
-    top: 2px;
-    right: 2px;
+    font-size: 20px;
+    top: 15px;
+    right: 10px;
   }
 
 }
