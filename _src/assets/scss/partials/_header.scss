@@ -1,33 +1,134 @@
 .page__header {
-  margin: 0 5px;
+  margin: 0 10px;
+  width:100vw;
 }
 
 .header__container {
   display:flex;
-  width: 100vw;
+  flex-direction: row;
+  align-content: center;
+  box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.07);
+}
+
+.logo__container {
+  margin-top:8px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0 10px 10px;
 }
 
 .header__logo {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
+  margin-left:5px;
 }
 
 .header__logo-name {
-  width: 56px;
-  height: 16px;
+  width: 100px;
+  height: 30px;
 }
 
 .header__nav {
   display: flex;
+  width:100%;
 }
+
 .header__nav-list {
+  width:100%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
   list-style: none;
-  font-size: 8px;
+  font-size: 13px;
   overflow: hidden;
 
+  a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#4E4E4E;
+      &:hover {
+      background-color:#F2B4BD;
+      color: white;
+      padding: 6px 1px;
+      border-radius: 2px;
+      animation-name: fadeInOpacity;
+      animation-timing-function: ease-in;
+      animation-duration: .5s;
+
+    }
+  }
 }
+
 .nav-list__element {
-
+  margin:7px;
 }
 
+.contact-btn {
+  background-color: #9FBFFF;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.burguer-menu {
+  display: none;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//Header Media Queries
+@media screen and (max-width: 600px) {
+  .header__container {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .header__nav {
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .header__nav-fade-in{
+    display:block;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-timing-function: ease-in;
+    animation-duration: .6s;
+  }
+
+  .header__nav-list {
+    display: block;
+    text-align: left;
+    width: 100%;
+    background-color:#9FBFFF;
+
+    .nav-list__link {
+      color:white;
+      padding: 8px 8px;
+      &:hover {
+        background-color: #799BE0;
+        font-weight: 400px;
+      }
+    }
+  }
+
+  .burguer-menu {
+    display: block;
+    color:#799BE0;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
+
+}
