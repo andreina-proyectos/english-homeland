@@ -1,14 +1,22 @@
+//variables
+$base-color: #f36b7f;
+$pink-transparent: rgba(243, 107, 127, 0.4);
+$contact-font: #504648;
+$icon-color: #BFC4CE;
+
+
 .page__main {
   margin:0 30px;
   color:#5f5658;
   text-align: center;
 }
 
+//prices section
+
 .section-prices__title {
   margin:20px 0;
   color:#f36b7f;
   font-size: 20px;
-  font-weight: normal;
 }
 
 .section-prices__pharagraph {
@@ -90,3 +98,41 @@
   font-size: 12px;
 
 }
+
+
+
+//schedule section
+
+.section-schedule__title {
+  color: $base-color;
+  padding: 15px 0px;
+  font-size: 20px;
+}
+
+
+.schedule__container {
+  text-align: center;
+  color: $contact-font;
+  margin: 15px 0px;
+  min-height: 30vw;
+}
+
+
+.schedule__card {
+  display: inline-block;
+  padding: 60px 50px;
+  margin: 15px;
+  margin-top: 50px;
+  border: solid 1px $icon-color;
+  border-top: solid 15px $pink-transparent;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(153,153,153,1);
+
+  .schedule__card_icon {
+      height: 60px;
+      position: absolute;
+      top: -40px;
+      left: -30px;
+  }
+}
+
