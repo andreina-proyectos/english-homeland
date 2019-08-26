@@ -1,13 +1,7 @@
-//variables
-$base-color: #f36b7f;
-$pink-transparent: rgba(243, 107, 127, 0.4);
-$contact-font: #504648;
-$icon-color: #BFC4CE;
-
 
 .page__main {
   margin:0 30px;
-  color:#5f5658;
+  color:$text-base;
   text-align: center;
 }
 
@@ -15,8 +9,8 @@ $icon-color: #BFC4CE;
 
 .section-prices__title {
   margin:20px 0;
-  color:#f36b7f;
-  font-size: 20px;
+  color:$base-color;
+  font-size: $title-size;
 }
 
 .section-prices__pharagraph {
@@ -56,19 +50,19 @@ $icon-color: #BFC4CE;
 }
 
 .card1 {
-  border-top:23px solid rgba(255, 176, 58, 0.4);;
+  border-top:23px solid $yellow-light;;
 }
 
 .card2 {
-  border-top:23px solid #82b5a5;
+  border-top:23px solid $green-light;
 }
 
 .card3 {
-  border-top:23px solid rgba(243, 107, 127, 0.4);
+  border-top:23px solid $pink-light;
 }
 
 .card4 {
-  border-top:23px solid rgba(159, 191, 255, 0.4);;
+  border-top:23px solid $blue-light;
 }
 
 .card__content {
@@ -85,7 +79,7 @@ $icon-color: #BFC4CE;
 
 .card__description {
   margin-top:20px;
-  font-size: 12px;
+  font-size: $font-size;
 
 }
 
@@ -95,7 +89,7 @@ $icon-color: #BFC4CE;
 
 .card__ad-info {
   margin-top:20px;
-  font-size: 12px;
+  font-size: $font-size;
 
 }
 
@@ -106,7 +100,7 @@ $icon-color: #BFC4CE;
 .section-schedule__title {
   color: $base-color;
   padding: 15px 0px;
-  font-size: 20px;
+  font-size: $title-size;
 }
 
 
@@ -124,7 +118,7 @@ $icon-color: #BFC4CE;
   margin: 15px;
   margin-top: 50px;
   border: solid 1px $icon-color;
-  border-top: solid 15px $pink-transparent;
+  border-top: solid 15px $pink-light;
   position: relative;
   box-shadow: 5px 5px 10px rgba(153,153,153,1);
 

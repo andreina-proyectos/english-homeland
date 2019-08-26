@@ -8,7 +8,7 @@
   flex-direction: row;
   align-content: center;
   box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.07);
-  background-color: white;
+  background-color: $white;
 }
 
 .logo__container {
@@ -50,8 +50,8 @@
     text-decoration: none;
     color:#4E4E4E;
       &:hover:not(last-child) {
-      background-color:#F2B4BD;
-      color: white;
+      background-color:$pink-hover;
+      color:$white;
       padding: 6px 1px;
       border-radius: 2px;
       animation-name: fadeInOpacity;
@@ -67,7 +67,7 @@
 }
 
 .contact-btn {
-  background-color: #9FBFFF;
+  background-color: $text-blue;
   text-align: center;
   border-radius: 4px;
   padding: 10px;
@@ -112,20 +112,20 @@
     display: block;
     text-align: left;
     width: 100%;
-    background-color:#9FBFFF;
+    background-color:$text-blue;
 
     .nav-list__link {
       color:white;
       padding: 8px 8px;
       &:hover {
-        background-color: #799BE0;
+        background-color: $blue-hover;
       }
     }
   }
 
   .burguer-menu {
     display: block;
-    color:#799BE0;
+    color:$burguer-color;
     position: absolute;
     font-size: 20px;
     top: 15px;
