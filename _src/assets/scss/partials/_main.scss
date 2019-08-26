@@ -224,3 +224,67 @@
       box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
   }
 }
+
+
+//contact section
+.contact__container {
+  margin:20px;
+  display: flex;
+}
+
+.contact__information {
+  width: 50%;
+  display: flex;
+  padding: 15px;
+  color: $contact-font;
+}
+
+.section-contact__title {
+  color: $base-color;
+  padding: 15px 0px;
+}
+
+.contact__info-logo {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+
+  .logo-image {
+      border-radius: 60%;
+      height: 80px;
+  }
+}
+
+.contact__information-text {
+  margin-left: 30px;
+  text-align: left;
+}
+
+.contact__information-list {
+  margin-top: 40px;
+  list-style: none;
+
+  .contact__information_item {
+      margin: 15px 0;
+      display: flex;
+
+      .fas {
+          color: $icon-color;
+          margin-right: 15px;
+          font-size: 1.2em;
+      }
+      .contact__information_item_value {
+          color: $base-color;
+      }
+  }
+}
+
+.contact__map {
+  background-color: aquamarine;
+  width: 50%;
+  background-color: grey;
+  .gmaps_frame__map {
+      height: 100%;
+  }
+}
