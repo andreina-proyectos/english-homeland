@@ -1,0 +1,35 @@
+.know-me-bio-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.know__images-container {
+  width:40%;
+  position: relative;
+  top: -120px;
+  left:-50px;
+  z-index: -5;
+}
+
+.know__blob {
+  transform: scale(1.3);
+}
+
+.know__photo {
+
+}
+
+.know__text-container {
+  margin-top: 90px;
+  margin-right: 20px;
+  max-width: 450px;
+  text-align: left;
+  color:$text-base;
+}
+
+.know__title {
+  padding-bottom: 20px;
+  color:$base-color;
+  font-size: $title-size;
+
+}
