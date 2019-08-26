@@ -93,6 +93,63 @@
 
 }
 
+//methodology section
+
+.main__section-methodology {
+  margin: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-method__title {
+  color:$base-color;
+  font-size: $title-size;
+}
+
+.section-method__paragraph{
+  margin: 20px 0;
+}
+
+.section-method__container {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-method__element {
+  width: 250px;
+  height: 180px;
+  background-color: aquamarine;
+  margin:10px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.158);
+  border: solid 1px #dddfe7;
+  display: flex;
+}
+
+.method-element__icon {
+  max-width: 20%;
+  margin:10px 5px 10px 20px;
+}
+
+.method-element__text {
+  display: flex;
+  flex-direction: column;
+
+  font-size: $font-size;
+  margin: 15px 10px;
+}
+
+.method-element__description {
+  margin: 10px 0;
+}
+
+
+
+
+
+
 
 
 //schedule section
