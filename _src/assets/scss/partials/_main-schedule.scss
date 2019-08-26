@@ -1,0 +1,73 @@
+//schedule section
+
+.section-schedule__title {
+  color: $base-color;
+  padding: 15px 0px;
+  font-size: $title-size;
+}
+
+
+.schedule__container {
+  text-align: center;
+  color: $contact-font;
+  margin: 15px 0px;
+  min-height: 30vw;
+}
+
+
+.schedule__card {
+  display: inline-block;
+  padding: 60px 50px;
+  margin: 15px;
+  margin-top: 50px;
+  border: solid 1px $icon-color;
+  border-top: solid 15px $pink-light;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(153,153,153,1);
+
+  .schedule__card_icon {
+      height: 60px;
+      position: absolute;
+      top: -40px;
+      left: -30px;
+  }
+}
+
+.pulse {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  background:transparent;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 2s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.568);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0.342);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.945);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.822);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0.247);
+      box-shadow: 0 0 0 10px rgba(204, 169, 44, 0.192);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+      box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}

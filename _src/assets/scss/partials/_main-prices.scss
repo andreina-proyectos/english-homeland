@@ -1,0 +1,87 @@
+//prices section
+
+.section-prices__title {
+  margin:20px 0;
+  color:$base-color;
+  font-size: $title-size;
+}
+
+.section-prices__pharagraph {
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.main__cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section__card {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.171);
+  border: solid 1px rgba(197, 197, 197, 0.3);
+  width:200px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 4px;
+
+  transition-property: top;
+  transition-duration: .8;
+  transition-timing-function: line;
+
+  &:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 10 10px 10px 0 rgba(0, 0, 0, 0.342);
+    animation-name: up-card;
+    animation-duration: .5s;
+  }
+}
+
+@keyframes up-card {
+  from {top: 0px; }
+  to {top: -15px; }
+}
+
+.card1 {
+  border-top:23px solid $yellow-light;;
+}
+
+.card2 {
+  border-top:23px solid $green-light;
+}
+
+.card3 {
+  border-top:23px solid $pink-light;
+}
+
+.card4 {
+  border-top:23px solid $blue-light;
+}
+
+.card__content {
+  margin: 10px 0;
+}
+
+.card__title {
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: normal;
+  color:black;
+
+}
+
+.card__description {
+  margin-top:20px;
+  font-size: $font-size;
+
+}
+
+.card__price {
+  margin: 30px 0;
+}
+
+.card__ad-info {
+  margin-top:20px;
+  font-size: $font-size;
+
+}

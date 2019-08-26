@@ -4,6 +4,14 @@
 @import 'partials/header';
 @import 'partials/hero';
 @import 'partials/main';
+
+@import 'partials/main-prices';
+@import 'partials/main-methodology';
+@import 'partials/main-schedule';
+@import 'partials/main-contact';
+
+
+
 @import 'partials/footer';
 
 //general SCSS
@@ -15,4 +23,10 @@
 
 body {
   width: 100vw;
+}
+
+.page__main {
+  margin:0 30px;
+  color:$text-base;
+  text-align: center;
 }
