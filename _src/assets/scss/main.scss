@@ -28,7 +28,15 @@ body {
 }
 
 .page__main {
-  margin:0 30px;
   color:$text-base;
   text-align: center;
+  width: 100vw;
+}
+
+.main-footer__container {
+  display: flex;
+}
+
+.page__main {
+  flex-grow: auto;
 }
