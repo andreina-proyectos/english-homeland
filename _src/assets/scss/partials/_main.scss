@@ -120,7 +120,7 @@
 .section-method__element {
   width: 250px;
   height: 180px;
-  background-color: aquamarine;
+  background-color: $white;
   margin:10px;
   border-radius: 5px;
   box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.158);
@@ -136,7 +136,6 @@
 .method-element__text {
   display: flex;
   flex-direction: column;
-
   font-size: $font-size;
   margin: 15px 10px;
 }
