@@ -1,4 +1,3 @@
-
 .know-me-bio-section {
   display: flex;
   justify-content: space-between;
@@ -32,4 +31,20 @@
 .know__title {
   @include title-style($base-color, $title-size);
   padding-bottom: 20px;
+}
+
+//media query
+
+@media screen and (min-width: 320px) and (max-width: 708px) {
+  .know-me-bio-section {
+    height: 80vh;
+    overflow-x: hidden;
+  }
+
+  .know__text-container {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: center;
+  }
 }
