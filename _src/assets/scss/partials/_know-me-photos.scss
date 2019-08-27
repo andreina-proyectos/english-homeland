@@ -1,0 +1,40 @@
+.know-me__photos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:50px;
+}
+
+.know-me__photos-title {
+  @include title-style($base-color, $title-size);
+}
+
+.academy-photos-wrapper {
+  margin:20px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  max-width: 839px;
+}
+
+.academy-photo-img {
+  max-width: 239px;
+  width:30%;
+  margin:20px;
+  padding-top:10px;
+  opacity: .8;
+}
+
+.photo1 {
+  border-top: 23px solid $blue-light;
+}
+
+.photo2 {
+  border-top: 23px solid $pink-light;
+}
+
+.photo3 {
+  border-top: 23px solid $yellow-light;
+}
