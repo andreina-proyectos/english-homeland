@@ -1,8 +1,9 @@
 .hero__container {
   display: flex;
   width:100vw;
-  height: 100vh;
-  overflow-x:hidden;
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .section-hero__information {
@@ -28,7 +29,6 @@
   margin:10px 0;
 }
 
-
 .hero__phrase {
   margin: 10px 0;
   margin-left:40px;
@@ -37,12 +37,11 @@
 }
 
 .certificates-list {
-  font-size: 14px;
+  font-size: $font-size;
   list-style: none;
   margin-left:20px;
   line-height: 2;
   color:$text-base;
-
 }
 
 .span-blue {
@@ -64,7 +63,7 @@
   padding: 10px;
   border-radius: 4px;
   color:$text-btn;
-  margin:20px;
+  margin:40px 0;
   text-align: center;
 }
 
@@ -85,12 +84,9 @@
   100% { transform: translateY(-10px); }
 }
 
-
-
 .section-hero__decoration {
   width:40%;
 }
-
 
 .hero__images-container {
   position: relative;
@@ -98,9 +94,8 @@
   z-index: -5;
 }
 .hero__blob {
-  transform: scale(1.5);
+  transform: scale(2);
 }
-
 
 .hero__image {
   max-width: 70%;
@@ -113,20 +108,89 @@
 //MEDIA QUERIES HERO
 
 @media screen and (min-width: 320px) and (max-width: 660px) {
+
+  .hero__container {
+    height: 70vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
 .section-hero__information {
-  margin-top: 30px;
-  margin-left:10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 50px;
   width:50%;
 }
 
-.hero__image {
-  max-width: 90%;
-  height: auto;
-  position: absolute;
-  top:45%;
-  right: 0%;
+.hero__description {
+  font-size: 11px;
 }
+
+.hero__title {
+  max-width: 300px;
+  font-size: 1.2rem;  color:$base-color;
+  line-height: 1.2;
+}
+
+.hero__phrase {
+  margin-left:10px;
+  font-size: 11px;
+}
+
+.certificates-list {
+  font-size: 11px;
+  line-height: 1.6;
+  color:$text-base;
+}
+
+.btn-reserva {
+  width: 80px;
+  padding: 5px;
+  font-size:11px;
+  align-self: flex-start;
+  margin-left: 40px;
+  margin-top:80px;
+}
+
+.hero__blob {
+  transform: scale(1.8);
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .hero__image {
+    max-width: 140%;
+    height: auto;
+    position: absolute;
+    top:45%;
+    right: 0%;
+  }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  .hero__image {
+    max-width: 120%;
+    height: auto;
+    position: absolute;
+    top:45%;
+    right: 0%;
+  }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 660px) {
+  .hero__image {
+    max-width: 100%;
+    height: auto;
+    top:45%;
+    right: -10%;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 1000px) {
+  .hero__image {
+    max-width: 90%;
+    height: auto;
+    top:45%;
+    right: 10%;
+  }
 }

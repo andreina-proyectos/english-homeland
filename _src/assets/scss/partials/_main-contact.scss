@@ -1,12 +1,13 @@
 //contact section
 .contact__container {
   display: flex;
+  margin:90px 0;
 }
 
 .contact__information {
   width: 50%;
   display: flex;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
   color: $contact-font;
 }
 
@@ -66,7 +67,6 @@
 
   .contact__container {
       flex-direction: column;
-
       .contact__information {
           width: 100%;
           padding: 15px 0px;
@@ -90,5 +90,28 @@
           height: 400px;
       }
   }
-
 }
+
+@media screen and (min-width: 632px) and (max-width:828px) {
+
+    .contact__information {
+        width: 50%;
+        padding: 15px 10px;
+        flex-direction: column;
+        .contact__info-logo {
+            justify-content: center;
+            width: 100%;
+        }
+        .contact__information-text {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    .contact__map {
+        width: 50%;
+        max-width: 100vw;
+        height: auto;
+    }
+}
+
