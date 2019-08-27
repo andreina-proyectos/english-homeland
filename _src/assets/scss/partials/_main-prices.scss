@@ -2,8 +2,7 @@
 
 .section-prices__title {
   margin:20px 0;
-  color:$base-color;
-  font-size: $title-size;
+  @include title-style($base-color, $title-size);
 }
 
 .section-prices__pharagraph {

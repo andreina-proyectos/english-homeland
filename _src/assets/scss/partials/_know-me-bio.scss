@@ -1,3 +1,4 @@
+
 .know-me-bio-section {
   display: flex;
   justify-content: space-between;
@@ -20,16 +21,15 @@
 }
 
 .know__text-container {
+  width:60%;
   margin-top: 90px;
-  margin-right: 20px;
+  margin-right: 30px;
   max-width: 450px;
   text-align: left;
   color:$text-base;
 }
 
 .know__title {
+  @include title-style($base-color, $title-size);
   padding-bottom: 20px;
-  color:$base-color;
-  font-size: $title-size;
-
 }

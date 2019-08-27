@@ -8,8 +8,7 @@
 }
 
 .section-method__title {
-  color:$base-color;
-  font-size: $title-size;
+  @include title-style($base-color, $title-size);
 }
 
 .section-method__paragraph{

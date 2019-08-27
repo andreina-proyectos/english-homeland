@@ -1,0 +1,12 @@
+@mixin title-style($color, $size) {
+  color: $color;
+  font-size: $size;
+}
+
+/*
+@mixin bg-img() {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/

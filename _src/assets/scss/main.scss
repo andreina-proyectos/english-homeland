@@ -1,17 +1,13 @@
 @import 'core/variables';
+@import 'core/mixins';
 @import 'core/settings';
 @import 'core/links';
+
 @import 'partials/header';
 @import 'partials/hero';
 @import 'partials/main';
-
-@import 'partials/main-prices';
-@import 'partials/main-methodology';
-@import 'partials/main-schedule';
-@import 'partials/main-contact';
-
-
 @import 'partials/footer';
+
 @import 'partials/know-me-bio';
 @import 'partials/know-me-reviews';
 @import 'partials/know-me-photos';
