@@ -1,10 +1,11 @@
 'use strict';
 const burguerMenu = document.querySelector('.burguer-menu');
 const headerNav = document.querySelector('.header__nav');
+const contactBtn = document.querySelector('.contact-btn');
 
 function handlerBurguerMenuClick() {
   headerNav.classList.toggle('header__nav-fade-in');
-  burguerMenu.classList.toggle('.contact-btn');
+  contactBtn.classList.toggle('.contact-btn');
 }
 
 burguerMenu.addEventListener('click', handlerBurguerMenuClick);
