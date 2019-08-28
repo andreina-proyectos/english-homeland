@@ -1,16 +1,17 @@
 .page__footer {
   width: 100%;
-  padding:40px 0 20px 0;
+  height: 20vh;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color:$white;
   overflow-x:hidden;
   background-image: url('../images/blob-footer.png');
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+
 }
 
 .footer__socialmedia-container {
@@ -51,3 +52,26 @@
   color:$base-color;
 }
 
+//media query
+
+@media screen and (max-width: 550px) {
+  .page__footer {
+    width: 100%;
+    height: auto;
+    padding-bottom:10px;
+    margin-top: 0px;
+    background-size: 100% 100%;
+
+    .footer__socialmedia-container {
+      margin-bottom: 5px;
+      padding-top:70px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .footer_icon {
+      margin: 0 6px;
+      font-size: 18px;
+  }
+}
+}
