@@ -189,16 +189,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 355px) {
-
-  .hero__container {
-    height: 90vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-}
-
-@media screen and (min-width: 360px) and (max-width: 450px) {
+@media screen and (min-width: 320px) and (max-width: 350px) {
 
   .hero__container {
     height: 70vh;
@@ -207,10 +198,19 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 660px) {
+@media screen and (min-width: 350px) and (max-width: 450px) {
 
   .hero__container {
-    height: 80vh;
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 660px) {
+
+  .hero__container {
+    height: 60vh;
     overflow-x: hidden;
     overflow-y: hidden;
   }
