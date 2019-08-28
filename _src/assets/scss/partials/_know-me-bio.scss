@@ -1,6 +1,7 @@
 .know-me-bio-section {
   display: flex;
   justify-content: space-between;
+  max-height: 600px;
 }
 
 .know__images-container {
@@ -39,12 +40,50 @@
   .know-me-bio-section {
     height: 80vh;
     overflow-x: hidden;
+    margin-bottom: 20px;
   }
 
   .know__text-container {
     font-size: 13px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-right: 20px;
     text-align: center;
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 522px) {
+  .know-me-bio-section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 600px;
+  }
+  .know__blob {
+    transform: scale(1);
+  }
+
+  .know__images-container {
+    height: 300px;
+    width:40%;
+    position: relative;
+    top: -120px;
+    left:-50px;
+    z-index: -5;
+
+  }
+  .know__text-container {
+    height: 300px;
+    width:auto;
+    margin: 20px 30px 20px;
+    max-width: 500px;
+    text-align: center;
+    font-size: 11px;
+
+    .know__title {
+      text-align: center;
+      padding-bottom: 10px;
+
+  }
+}
 }
