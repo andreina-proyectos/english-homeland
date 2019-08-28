@@ -2,16 +2,16 @@
 const burguerMenu = document.querySelector('.burguer-menu');
 const headerNav = document.querySelector('.header__nav');
 
-
-
 function handlerBurguerMenuClick() {
   headerNav.classList.toggle('header__nav-fade-in');
+  burguerMenu.classList.toggle('.contact-btn');
 }
 
 burguerMenu.addEventListener('click', handlerBurguerMenuClick);
 
-//Google Maps funcionality
 
+
+//Google Maps funcionality
 // Initialize and add the map
 function initMap() {
   // The location

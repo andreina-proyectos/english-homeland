@@ -5,27 +5,30 @@
 
 .header__container {
   display:flex;
+  flex-direction: column;
   flex-direction: row;
-  align-content: center;
   box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.07);
   background-color: $white;
 }
 
 .logo__container {
-  margin-top:8px;
   display: flex;
   justify-content: flex-start;
-  padding: 10px 0 10px 10px;
+  padding: 5px 10px 5px 5px;
+}
+
+.logo__link {
+  text-decoration: none;
+  color:transparent;
 }
 
 .header__logo {
   width: 55px;
   height: 50px;
-  margin-left:5px;
+  margin-left:30px;
 }
 
 .header__logo-name {
-  padding-top: 10px;
   width: 125px;
   height: 30px;
 }
@@ -40,7 +43,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   list-style: none;
   font-size: 13px;
   overflow: hidden;
@@ -50,16 +53,6 @@
     text-align: center;
     text-decoration: none;
     color:#4E4E4E;
-      &:hover:not(last-child) {
-      background-color:$pink-hover;
-      color:$white;
-      padding: 6px 1px;
-      border-radius: 2px;
-      animation-name: fadeInOpacity;
-      animation-timing-function: ease-in;
-      animation-duration: .5s;
-
-    }
   }
 }
 
@@ -91,7 +84,7 @@
 @media screen and (max-width: 662px) {
   .header__container {
     flex-direction: column;
-    box-shadow: none;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.07);
   }
 
   .header__nav {
@@ -100,10 +93,9 @@
     justify-content: center;
   }
 
-
   .header__nav-fade-in{
     display:block;
-    opacity: 1;
+    opacity: .9;
     animation-name: fadeInOpacity;
     animation-timing-function: ease-in;
     animation-duration: .6s;
@@ -111,15 +103,19 @@
 
   .header__nav-list {
     display: block;
-    text-align: left;
+    border-radius: 4px;
     width: 100%;
-    background-color:$text-blue;
+    background-color:rgba(159, 191, 255, 0.493);
 
+    .nav-list__element {
+      margin:7px;
+    }
     .nav-list__link {
+      text-transform: uppercase;
       color:white;
-      padding: 8px 8px;
+      padding: 5px 5px;
       &:hover {
-        background-color: $blue-hover;
+        background-image: linear-gradient(to right, rgba(52, 91, 168, 0.575), rgba(159, 191, 255, 0.4));
       }
     }
   }
