@@ -14,13 +14,12 @@
   display: flex;
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  max-width: 839px;
+  flex-wrap: no-wrap;
+  width: 80%;
+  max-width: 900px;
 }
 
 .academy-photo-img {
-  max-width: 239px;
   width:30%;
   margin:20px;
   padding-top:10px;
@@ -37,4 +36,22 @@
 
 .photo3 {
   border-top: 23px solid $yellow-light;
+}
+
+//media query
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .academy-photos-wrapper {
+   flex-direction: column;
+   align-items: center;
+    width: 80%;
+    max-width: 900px;
+  }
+
+  .academy-photo-img {
+    width:50%;
+    margin:12px;
+    padding-top:10px;
+    opacity: .8;
+  }
 }

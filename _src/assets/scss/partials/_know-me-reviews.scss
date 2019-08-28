@@ -5,6 +5,7 @@
 }
 
 .know__reviews__title {
+  margin-bottom:20px;
   @include title-style($base-color, $title-size);
 }
 
