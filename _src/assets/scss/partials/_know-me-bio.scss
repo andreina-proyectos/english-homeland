@@ -1,6 +1,6 @@
 .know-me-bio-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-height: 600px;
 }
 
@@ -17,7 +17,13 @@
 }
 
 .know__photo {
-
+  width:70%;
+  max-height: 300px;
+  max-width: 280px;
+  border-radius: 100%;
+  position: absolute;
+  top: 210px;
+  left: 166px;
 }
 
 .know__text-container {
@@ -27,6 +33,7 @@
   max-width: 450px;
   text-align: left;
   color:$text-base;
+  font-size: 14.5px;
 }
 
 .know__title {
@@ -35,6 +42,12 @@
 }
 
 //media query
+
+@media screen and (min-width: 320px) and (max-width: 1103px) {
+  .know-me-bio-section {
+    justify-content: space-between;
+  }
+}
 
 @media screen and (min-width: 320px) and (max-width: 708px) {
   .know-me-bio-section {
@@ -49,14 +62,17 @@
     margin-right: 20px;
     text-align: center;
   }
+    .know__blob {
+    transform: scale(1);
+  }
 }
 
-@media screen and (min-width: 320px) and (max-width: 522px) {
+@media screen and (min-width: 320px) and (max-width: 700px) {
   .know-me-bio-section {
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
     height: 600px;
   }
   .know__blob {
@@ -71,6 +87,14 @@
     left:-50px;
     z-index: -5;
 
+    .know__photo {
+      width:120%;
+      top: 210px;
+      left: 156px;
+      max-height: 200px;
+      max-width: 200px;
+    }
+
   }
   .know__text-container {
     height: 300px;
@@ -78,7 +102,7 @@
     margin: 20px 30px 20px;
     max-width: 500px;
     text-align: center;
-    font-size: 11px;
+    font-size: 14px;
 
     .know__title {
       text-align: center;
@@ -86,4 +110,14 @@
 
   }
 }
+}
+
+@media screen and (min-width: 700px) and (max-width: 848px) {
+  .know__photo {
+    width:110%;
+    top: 210px;
+    left: 150px;
+    max-height: 200px;
+    max-width: 200px;
+  }
 }
