@@ -54,11 +54,14 @@
 
 .scroll-top-link {
   position: fixed;
-  bottom:10%;
+  bottom:6%;
   right: 2%;
   text-decoration: none;
   color:$base-color;
   font-size: 40px;
+  &:hover {
+    color:$method-card-title;
+  }
 }
 
 //media query
