@@ -52,6 +52,15 @@
   color:$base-color;
 }
 
+.scroll-top-link {
+  position: fixed;
+  bottom:10%;
+  right: 2%;
+  text-decoration: none;
+  color:$base-color;
+  font-size: 40px;
+}
+
 //media query
 
 @media screen and (max-width: 550px) {
