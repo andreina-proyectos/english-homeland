@@ -193,8 +193,8 @@
   .hero__image {
     max-width: 70%;
     height: auto;
-    top:35%;
-    right: 30%;
+    top:40%;
+    right: 20%;
   }
 }
 
@@ -219,17 +219,20 @@
 }
 
 
-@media screen and (min-width: 374px) and (max-width: 999px) {
+@media screen and (min-width: 455px) and (max-width: 999px) {
   .hero__container {
-    height: 85vh;
+    height: 88vh;
     overflow-x: hidden;
     overflow-y: hidden;
+  }
+  .hero__blob {
+    transform: scale(1.7);
   }
 }
 
 @media screen and (min-width: 1000px) {
   .hero__container {
-    height: 80vh;
+    height: 90vh;
     overflow-x: hidden;
     overflow-y: hidden;
   }
