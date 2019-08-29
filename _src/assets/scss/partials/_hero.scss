@@ -7,6 +7,7 @@
 }
 
 .section-hero__information {
+  padding-right: 130px;
   margin-top: 100px;
   margin-left:30px;
   display: flex;
@@ -107,11 +108,12 @@
 
 //MEDIA QUERIES HERO
 
-@media screen and (min-width: 200px) and (max-width: 660px) {
+@media screen and (min-width: 200px) and (max-width: 600px) {
 
 .section-hero__information {
   margin-top: 50px;
-  width:50%;
+  width:auto;
+  padding-right: 22px;
 }
 
 .hero__description {
@@ -149,13 +151,31 @@
 }
 }
 
+@media screen and (min-width: 200px) and (max-width: 446px) {
+  .section-hero__information {
+    width:70%;
+    padding-right: 40px;
+  }
+
+}
+
+@media screen and (min-width: 447px) and (max-width: 587px) {
+  .section-hero__information {
+    width:50%;
+    padding-right: 50px;
+    margin-left:12px;
+  }
+}
+
+//media queries image undraw
+
 @media screen and (min-width: 200px) and (max-width: 503px) {
   .hero__image {
-    max-width: 110%;
+    max-width: 90%;
     height: auto;
     position: absolute;
-    top:50%;
-    right: 0%;
+    top:47%;
+    right: 10%;
   }
 }
 
@@ -166,7 +186,7 @@
     height: auto;
     position: absolute;
     top:45%;
-    right: -10%;
+    right: 5%;
   }
 }
 
@@ -176,15 +196,15 @@
     max-width: 100%;
     height: auto;
     top:45%;
-    right: -10%;
+    right: 15%;
   }
 }
 
 @media screen and (min-width: 660px) and (max-width: 1000px) {
   .hero__image {
-    max-width: 90%;
+    max-width: 85%;
     height: auto;
-    top:45%;
+    top:42%;
     right: 10%;
   }
 }
@@ -203,6 +223,7 @@
 @media screen and (min-width: 200px) and (max-width: 355px) {
 
   .hero__container {
+    width: 100vw;
     height: 95vh;
     overflow-x: hidden;
     overflow-y: hidden;
