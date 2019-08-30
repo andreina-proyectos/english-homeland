@@ -54,7 +54,15 @@
     text-align: center;
     text-decoration: none;
     color:#4E4E4E;
+    &:hover {
+      background-color:rgba(197, 211, 236, 0.466);
+      padding: 15px 15px;
+      border-radius: 2px;
+      animation-name: fadeInOpacity;
+      animation-timing-function: ease-in;
+      animation-duration: .5s;
   }
+}
 }
 
 .nav-list__element {
