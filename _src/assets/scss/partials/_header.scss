@@ -86,6 +86,8 @@
   .header__container {
     flex-direction: column;
     box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.07);
+    max-width: 100%;
+
   }
 
   .header__nav {
@@ -103,20 +105,24 @@
   }
 
   .header__nav-list {
+    overflow-x: hidden;
     display: block;
     border-radius: 4px;
-    width: 100%;
+    max-width: 100%;
     background-color:rgba(159, 191, 255, 0.493);
+    padding: 5px 0;
 
     .nav-list__element {
-      margin:7px;
+      margin:4px;
     }
     .nav-list__link {
       text-transform: uppercase;
       color:$text-base;
       padding: 5px 5px;
+      margin:0 10px;
       &:hover {
         background-image: linear-gradient(to right, rgba(52, 91, 168, 0.575), rgba(159, 191, 255, 0.4));
+        border-radius: 4px;
       }
     }
   }

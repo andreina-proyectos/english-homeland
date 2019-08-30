@@ -61,6 +61,7 @@
   font-size: 40px;
   &:hover {
     color:$method-card-title;
+    transition: all .6s ease-in-out
   }
 }
 
