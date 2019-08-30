@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   width: 80%;
   max-width: 900px;
 }
@@ -24,6 +24,7 @@
   margin:20px;
   padding-top:10px;
   opacity: .8;
+  max-height: 300px;
 }
 
 .photo1 {
@@ -36,6 +37,14 @@
 
 .photo3 {
   border-top: 23px solid $yellow-light;
+}
+
+.photo4 {
+  border-top: 23px solid $green-light;
+}
+
+.photo5 {
+  border-top: 23px solid $blue-light;
 }
 
 //media query
@@ -53,5 +62,6 @@
     margin:12px;
     padding-top:10px;
     opacity: .8;
+    max-height: 200px;
   }
 }
