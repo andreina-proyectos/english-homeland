@@ -15,7 +15,7 @@
 		"gulp-notify": "*",
 		"gulp-plumber": "*",
 		"gulp-rename": "*",
-		"gulp-sass": "4.0.2",
+		"gulp-sass": "5.1.0",
 		"gulp-sourcemaps": "*",
 		"gulp-uglify-es": "^1.0.4",
 		"gulp-zip": "*",
